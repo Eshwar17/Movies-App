@@ -10,9 +10,10 @@ function App() {
       <Header />
       <div className="main">
       {
-        movies.map((element) => {
+        movies.map((element, index) => {
           return (
           <Movie 
+          key = {index}
           title={element.Title} 
           year={element.Year} 
           img={element.Poster}
